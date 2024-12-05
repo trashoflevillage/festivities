@@ -16,10 +16,4 @@ public class ModItems {
     public static void registerModItems() {
         Festivities.LOGGER.info("Registering items for " + Festivities.MOD_ID + ".");
     }
-
-    private static List<Identifier> getFungalUpgradeEmptyBaseSlotTextures() {
-        return List.of(
-                Identifier.of(Festivities.MOD_ID, "item/empty_slot_bow")
-        );
-    }
 }
