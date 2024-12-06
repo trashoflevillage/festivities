@@ -3,9 +3,9 @@
 	"id": "festivities",
 	"version": "${version}",
 	"name": "Festivities",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Celebrate the holidays in Minecraft!",
 	"authors": [
-		"Me!"
+		"trashoflevillage"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"io.github.trashoflevillage.festivities.FestivitiesDataGenerator"
+		],
+		"client": [
+			"io.github.trashoflevillage.client.FestivitiesClient"
 		]
 	},
 	"mixins": [

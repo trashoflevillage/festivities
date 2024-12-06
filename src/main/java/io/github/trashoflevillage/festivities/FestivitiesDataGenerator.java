@@ -1,5 +1,6 @@
 package io.github.trashoflevillage.festivities;
 
+import io.github.trashoflevillage.festivities.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 

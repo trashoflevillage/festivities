@@ -1,6 +1,7 @@
 package io.github.trashoflevillage.festivities;
 
 import io.github.trashoflevillage.festivities.blocks.ModBlocks;
+import io.github.trashoflevillage.festivities.items.ModArmorMaterials;
 import io.github.trashoflevillage.festivities.items.ModItemGroups;
 import io.github.trashoflevillage.festivities.items.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -22,6 +23,7 @@ public class Festivities implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModArmorMaterials.initialize();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
