@@ -6,8 +6,14 @@ import io.github.trashoflevillage.festivities.items.ModItemGroups;
 import io.github.trashoflevillage.festivities.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ItemStack;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.time.LocalDate;
+import java.time.temporal.ChronoField;
 
 public class Festivities implements ModInitializer {
 	public static final String MOD_ID = "festivities";
@@ -27,5 +33,12 @@ public class Festivities implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+	}
+
+	public boolean isChristmas() {
+		LocalDate localDate = LocalDate.now();
+		int day = localDate.get(ChronoField.DAY_OF_MONTH);
+		int month = localDate.get(ChronoField.MONTH_OF_YEAR);
+		return (month == 12 && day == 25);
 	}
 }
