@@ -22,12 +22,12 @@ public class ModTrades {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 3),
                     new ItemStack(ModBlocks.GREEN_CANDY_CANE_BLOCK, 16),
-                    12, 1, 0.2f
+                    12, 1, 0.05f
             ));
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 3),
                     new ItemStack(ModBlocks.RED_CANDY_CANE_BLOCK, 16),
-                    12, 1, 0.2f
+                    12, 1, 0.05f
             ));
         });
     }
