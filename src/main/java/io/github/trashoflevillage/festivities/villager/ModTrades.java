@@ -13,6 +13,9 @@ import net.minecraft.village.VillagerProfession;
 import java.util.Optional;
 
 public class ModTrades {
+    private static final float LOW_PRICE_MULTIPLER = 0.05F;
+    private static final float HIGH_PRICE_MULTIPLER = 0.2F;
+
     public static void registerTrades() {
         registerGiftmakerTrades();
     }
@@ -22,12 +25,12 @@ public class ModTrades {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 3),
                     new ItemStack(ModBlocks.GREEN_CANDY_CANE_BLOCK, 16),
-                    12, 1, 0.05f
+                    12, 1, LOW_PRICE_MULTIPLER
             ));
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 3),
                     new ItemStack(ModBlocks.RED_CANDY_CANE_BLOCK, 16),
-                    12, 1, 0.05f
+                    12, 1, LOW_PRICE_MULTIPLER
             ));
         });
     }
