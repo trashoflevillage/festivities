@@ -1,11 +1,10 @@
-package io.github.trashoflevillage.client;
+package io.github.trashoflevillage.festivities.client;
 
 import io.github.trashoflevillage.festivities.items.ModItems;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.component.type.DyedColorComponent;
 import net.minecraft.item.Item;
 

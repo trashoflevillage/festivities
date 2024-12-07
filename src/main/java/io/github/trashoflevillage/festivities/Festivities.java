@@ -4,6 +4,7 @@ import io.github.trashoflevillage.festivities.blocks.ModBlocks;
 import io.github.trashoflevillage.festivities.items.ModArmorMaterials;
 import io.github.trashoflevillage.festivities.items.ModItemGroups;
 import io.github.trashoflevillage.festivities.items.ModItems;
+import io.github.trashoflevillage.festivities.sounds.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.block.Blocks;
@@ -29,6 +30,7 @@ public class Festivities implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModSounds.registerSounds();
 		ModArmorMaterials.initialize();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
@@ -36,17 +38,14 @@ public class Festivities implements ModInitializer {
 	}
 
 	public static boolean isChristmas() {
-		return true;
-//		LocalDate localDate = LocalDate.now();
-//		int day = localDate.get(ChronoField.DAY_OF_MONTH);
-//		int month = localDate.get(ChronoField.MONTH_OF_YEAR);
-//		return (month == 12 && day == 25);
+		LocalDate localDate = LocalDate.now();
+		int month = localDate.get(ChronoField.MONTH_OF_YEAR);
+		return (month == 12);
 	}
 
 	public static boolean isHalloween() {
 		LocalDate localDate = LocalDate.now();
-		int day = localDate.get(ChronoField.DAY_OF_MONTH);
 		int month = localDate.get(ChronoField.MONTH_OF_YEAR);
-		return (month == 10 && day == 31);
+		return (month == 10);
 	}
 }

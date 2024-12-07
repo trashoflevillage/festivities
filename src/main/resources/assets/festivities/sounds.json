@@ -1,0 +1,14 @@
+{
+  "christmas_music": {
+    "category": "minecraft:music",
+    "sounds": [
+      {
+        "name": "festivities:music/flake",
+        "stream": true
+      },
+      {
+        "name": "festivities:music/kyoto",
+        "stream": true
+      }
+    ]}
+}
