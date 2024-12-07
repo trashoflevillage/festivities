@@ -35,10 +35,18 @@ public class Festivities implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 	}
 
-	public boolean isChristmas() {
+	public static boolean isChristmas() {
+		return true;
+//		LocalDate localDate = LocalDate.now();
+//		int day = localDate.get(ChronoField.DAY_OF_MONTH);
+//		int month = localDate.get(ChronoField.MONTH_OF_YEAR);
+//		return (month == 12 && day == 25);
+	}
+
+	public static boolean isHalloween() {
 		LocalDate localDate = LocalDate.now();
 		int day = localDate.get(ChronoField.DAY_OF_MONTH);
 		int month = localDate.get(ChronoField.MONTH_OF_YEAR);
-		return (month == 12 && day == 25);
+		return (month == 10 && day == 31);
 	}
 }
