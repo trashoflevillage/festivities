@@ -1,6 +1,7 @@
 package io.github.trashoflevillage.festivities.items;
 
 import io.github.trashoflevillage.festivities.Festivities;
+import io.github.trashoflevillage.festivities.blocks.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.DyedColorComponent;
@@ -21,6 +22,9 @@ public class ModItemGroups {
                     .icon(() -> DyedColorComponent.setColor(CREATIVE_TAB_ICON, List.of((DyeItem)Items.RED_DYE)))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.JOLLY_LEATHER_HELMET);
+                        entries.add(ModBlocks.RED_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.GREEN_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.GIFTBOX);
                     }))
                     .build()
     );
@@ -28,6 +32,13 @@ public class ModItemGroups {
     public static void registerItemGroups() {
         addItemsToItemGroup(ItemGroups.COMBAT,
                 ModItems.JOLLY_LEATHER_HELMET
+        );
+        addItemsToItemGroup(ItemGroups.FUNCTIONAL,
+                ModBlocks.GIFTBOX
+        );
+        addItemsToItemGroup(ItemGroups.BUILDING_BLOCKS,
+                ModBlocks.RED_CANDY_CANE_BLOCK,
+                ModBlocks.GREEN_CANDY_CANE_BLOCK
         );
     }
 

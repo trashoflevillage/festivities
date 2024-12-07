@@ -1,4 +1,9 @@
 {
   "itemgroup.festivities": "Festivities",
-  "item.festivities.jolly_leather_helmet": "Jolly Leather Cap"
+  "item.festivities.jolly_leather_helmet": "Jolly Leather Cap",
+  "block.festivities.red_candy_cane_block": "Red Candy Cane Block",
+  "block.festivities.green_candy_cane_block": "Green Candy Cane Block",
+  "block.festivities.giftbox": "Giftbox",
+
+  "entity.minecraft.villager.giftmaker": "Giftmaker"
 }

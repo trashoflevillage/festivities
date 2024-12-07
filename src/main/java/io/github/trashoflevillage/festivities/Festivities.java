@@ -5,6 +5,9 @@ import io.github.trashoflevillage.festivities.items.ModArmorMaterials;
 import io.github.trashoflevillage.festivities.items.ModItemGroups;
 import io.github.trashoflevillage.festivities.items.ModItems;
 import io.github.trashoflevillage.festivities.sounds.ModSounds;
+import io.github.trashoflevillage.festivities.villager.ModTrades;
+import io.github.trashoflevillage.festivities.villager.ModVillagers;
+import io.github.trashoflevillage.festivities.world.village.VillageAdditions;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.block.Blocks;
@@ -35,6 +38,9 @@ public class Festivities implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+		VillageAdditions.registerNewVillageStructures();
+		ModVillagers.registerVillagers();
+		ModTrades.registerTrades();
 	}
 
 	public static boolean isChristmas() {
