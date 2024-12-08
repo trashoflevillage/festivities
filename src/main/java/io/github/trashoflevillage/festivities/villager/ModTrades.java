@@ -2,6 +2,7 @@ package io.github.trashoflevillage.festivities.villager;
 
 
 import io.github.trashoflevillage.festivities.blocks.ModBlocks;
+import io.github.trashoflevillage.festivities.items.ModItems;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -31,6 +32,14 @@ public class ModTrades {
                     new TradedItem(Items.EMERALD, 3),
                     new ItemStack(ModBlocks.RED_CANDY_CANE_BLOCK, 16),
                     12, 1, LOW_PRICE_MULTIPLER
+            ));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GIFTMAKER, 2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new TradedItem(Items.EMERALD, 15),
+                    ModItems.getRandomlyColoredJollyHat(random),
+                    5, 15, HIGH_PRICE_MULTIPLER
             ));
         });
     }

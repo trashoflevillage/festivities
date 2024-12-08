@@ -63,7 +63,7 @@
     }
   ],
   "textures": {
-    "layer0": "festivities:item/jolly_leather_helmet",
-    "layer1": "festivities:item/jolly_leather_helmet_overlay"
+    "layer0": "festivities:item/jolly_helmet",
+    "layer1": "festivities:item/jolly_helmet_overlay"
   }
 }

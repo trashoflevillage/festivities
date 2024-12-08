@@ -12,7 +12,7 @@ import net.minecraft.item.Item;
 public class FestivitiesClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        registerItemColor(ModItems.JOLLY_LEATHER_HELMET);
+        registerItemColor(ModItems.JOLLY_HELMET);
     }
 
     private void registerItemColor(Item item) {

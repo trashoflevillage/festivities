@@ -15,13 +15,13 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModItemGroups {
-    private static final ItemStack CREATIVE_TAB_ICON = new ItemStack(ModItems.JOLLY_LEATHER_HELMET);
+    private static final ItemStack CREATIVE_TAB_ICON = new ItemStack(ModItems.JOLLY_HELMET);
 
     public static final ItemGroup FESTIVITIES_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(Festivities.MOD_ID, "mushroommadness"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.festivities"))
                     .icon(() -> DyedColorComponent.setColor(CREATIVE_TAB_ICON, List.of((DyeItem)Items.RED_DYE)))
                     .entries(((displayContext, entries) -> {
-                        entries.add(ModItems.JOLLY_LEATHER_HELMET);
+                        entries.add(ModItems.JOLLY_HELMET);
                         entries.add(ModBlocks.RED_CANDY_CANE_BLOCK);
                         entries.add(ModBlocks.GREEN_CANDY_CANE_BLOCK);
                         entries.add(ModBlocks.GIFTBOX);
@@ -31,7 +31,7 @@ public class ModItemGroups {
 
     public static void registerItemGroups() {
         addItemsToItemGroup(ItemGroups.COMBAT,
-                ModItems.JOLLY_LEATHER_HELMET
+                ModItems.JOLLY_HELMET
         );
         addItemsToItemGroup(ItemGroups.FUNCTIONAL,
                 ModBlocks.GIFTBOX

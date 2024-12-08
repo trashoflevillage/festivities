@@ -17,8 +17,8 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials {
-    public static final int JOLLY_LEATHER_DURABILITY_MULTIPLIER = 5;
-    public static final RegistryEntry<ArmorMaterial> JOLLY_LEATHER = registerMaterial("jolly_leather",
+    public static final int JOLLY_DURABILITY_MULTIPLIER = 5;
+    public static final RegistryEntry<ArmorMaterial> JOLLY = registerMaterial("jolly",
         // Defense (protection) point values for each armor piece.
         Map.of(
                 ArmorItem.Type.HELMET, 1,

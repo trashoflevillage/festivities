@@ -26,27 +26,7 @@ public class GlobalEntity {
                 entity.equipStack(EquipmentSlot.HEAD, new ItemStack(random.nextFloat() < 0.1F ? Blocks.JACK_O_LANTERN : Blocks.CARVED_PUMPKIN));
             }
             else if (Festivities.isChristmas()) {
-                Item[] dyes = new Item[] {
-                        Items.WHITE_DYE,
-                        Items.LIGHT_GRAY_DYE,
-                        Items.GRAY_DYE,
-                        Items.BLACK_DYE,
-                        Items.BROWN_DYE,
-                        Items.RED_DYE,
-                        Items.ORANGE_DYE,
-                        Items.YELLOW_DYE,
-                        Items.LIME_DYE,
-                        Items.GREEN_DYE,
-                        Items.CYAN_DYE,
-                        Items.LIGHT_BLUE_DYE,
-                        Items.BLUE_DYE,
-                        Items.PURPLE_DYE,
-                        Items.MAGENTA_DYE,
-                        Items.PINK_DYE
-                };
-                entity.equipStack(EquipmentSlot.HEAD, DyedColorComponent.setColor(new ItemStack(ModItems.JOLLY_LEATHER_HELMET), List.of((DyeItem)dyes[
-                        random.nextBetween(0, dyes.length - 1)
-                ])));
+                entity.equipStack(EquipmentSlot.HEAD, ModItems.getRandomlyColoredJollyHat(random));
             }
         }
     }
