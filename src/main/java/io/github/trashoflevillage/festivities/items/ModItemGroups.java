@@ -25,6 +25,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RED_CANDY_CANE_BLOCK);
                         entries.add(ModBlocks.GREEN_CANDY_CANE_BLOCK);
                         entries.add(ModBlocks.GIFTBOX);
+                        entries.add(ModItems.HOLIDAY_BUNDLE);
                     }))
                     .build()
     );
