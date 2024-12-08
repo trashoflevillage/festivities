@@ -26,7 +26,7 @@ public class GlobalEntity {
                 entity.equipStack(EquipmentSlot.HEAD, new ItemStack(random.nextFloat() < 0.1F ? Blocks.JACK_O_LANTERN : Blocks.CARVED_PUMPKIN));
             }
             else if (Festivities.isChristmas()) {
-                entity.equipStack(EquipmentSlot.HEAD, ModItems.getRandomlyColoredJollyHat(random));
+                entity.equipStack(EquipmentSlot.HEAD, ModItems.getRandomlyColoredJollyHat(random, random.nextBetween(1, 5)));
             }
         }
     }
