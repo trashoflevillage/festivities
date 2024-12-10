@@ -10,6 +10,11 @@
     "defaultRequire": 1
   },
   "client": [
-    "MinecraftClientMixin"
+    "EvokerEntityRendererMixin",
+    "MinecraftClientMixin",
+    "PillagerEntityRendererMixin",
+    "RavagerEntityRendererMixin",
+    "TexturedRenderLayersMixin",
+    "VindicatorEntityRendererMixin"
   ]
 }
