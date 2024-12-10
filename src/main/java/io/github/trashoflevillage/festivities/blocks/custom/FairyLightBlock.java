@@ -72,14 +72,15 @@ public class FairyLightBlock extends Block {
 
     public void update(BlockState state, ServerWorld world, BlockPos pos) {
         boolean bl = world.isReceivingRedstonePower(pos);
-        if (bl != (Boolean)state.get(POWERED)) {
-            BlockState blockState = state;
+        BlockState blockState = state;
+        if (bl != state.get(POWERED)) {
             if (!(Boolean)state.get(POWERED)) {
                 state = blockState.with(POWERED, bl);
                 cycleColors(state, world, pos);
             }
         } else {
-            world.setBlockState(pos, state.with(POWERED, false));
+            state = blockState.with(POWERED, bl);
+            world.setBlockState(pos, state);
         }
     }
 
