@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "color=red": {
+      "model": "festivities:block/red_fairy_light_block"
+    },
+    "color=blue": {
+      "model": "festivities:block/blue_fairy_light_block"
+    },
+    "color=green": {
+      "model": "festivities:block/green_fairy_light_block"
+    }
+  }
+}

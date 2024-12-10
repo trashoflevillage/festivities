@@ -1,6 +1,7 @@
 package io.github.trashoflevillage.festivities.blocks;
 
 import io.github.trashoflevillage.festivities.Festivities;
+import io.github.trashoflevillage.festivities.blocks.custom.FairyLightBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -25,6 +26,9 @@ public class ModBlocks {
     public static Block RED_CANDY_CANE_BLOCK = registerBlock("red_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
     public static Block GREEN_CANDY_CANE_BLOCK = registerBlock("green_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
     public static Block GIFTBOX = registerBlock("giftbox", new Block(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL)));
+    public static Block FAIRY_LIGHT_BLOCK = registerBlock("fairy_light_block", new FairyLightBlock(AbstractBlock.Settings.copy(Blocks.GLASS).luminance(
+            state -> 15
+    )));
 
     private static Block registerBlock(String name, Block block) {
         return registerBlock(name, block, true);
