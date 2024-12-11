@@ -11,11 +11,15 @@
     "defaultRequire": 1
   },
   "client": [
+    "CreeperEntityRendererMixin",
     "EvokerEntityRendererMixin",
+    "HuskEntityRendererMixin",
     "MinecraftClientMixin",
     "PillagerEntityRendererMixin",
     "RavagerEntityRendererMixin",
+    "SkeletonEntityRendererMixin",
     "TexturedRenderLayersMixin",
-    "VindicatorEntityRendererMixin"
+    "VindicatorEntityRendererMixin",
+    "ZombieBaseEntityRendererMixin"
   ]
 }
