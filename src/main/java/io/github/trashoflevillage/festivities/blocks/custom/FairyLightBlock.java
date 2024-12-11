@@ -16,9 +16,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.Nullable;
 
 public class FairyLightBlock extends Block {
@@ -60,7 +58,7 @@ public class FairyLightBlock extends Block {
             state = state.with(COLOR, FairyLightColor.RED);
         }
         world.setBlockState(pos, state);
-        world.playSoundAtBlockCenter(pos, SoundEvents.BLOCK_END_PORTAL_FRAME_FILL, SoundCategory.BLOCKS, 1f, 2f, true);
+        world.playSoundAtBlockCenter(pos, SoundEvents.BLOCK_AMETHYST_BLOCK_RESONATE, SoundCategory.BLOCKS, 1f, 1.5f, true);
     }
 
     @Override
@@ -84,13 +82,25 @@ public class FairyLightBlock extends Block {
         }
     }
 
+    @Override
+    protected boolean hasComparatorOutput(BlockState state) {
+        return true;
+    }
+
+    @Override
+    protected int getComparatorOutput(BlockState state, World world, BlockPos pos) {
+        return state.get(COLOR).comparatorOutput;
+    }
+
     public enum FairyLightColor implements StringIdentifiable {
-        RED("red"), GREEN("green"), BLUE("blue");
+        RED("red", 1), GREEN("green", 2), BLUE("blue", 3);
 
         private final String name;
+        private final int comparatorOutput;
 
-        FairyLightColor(final String name) {
+        FairyLightColor(final String name, int comparatorOutput) {
             this.name = name;
+            this.comparatorOutput = comparatorOutput;
         }
 
         @Override
