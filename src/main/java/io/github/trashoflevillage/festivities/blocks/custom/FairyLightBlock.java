@@ -49,7 +49,7 @@ public class FairyLightBlock extends Block {
         return ActionResult.SUCCESS;
     }
 
-    private void cycleColors(BlockState state, World world, BlockPos pos) {
+    private BlockState cycleColors(BlockState state, World world, BlockPos pos) {
         if (state.get(COLOR) == FairyLightColor.RED) {
             state = state.with(COLOR, FairyLightColor.GREEN);
         } else if (state.get(COLOR) == FairyLightColor.GREEN) {
@@ -59,6 +59,14 @@ public class FairyLightBlock extends Block {
         }
         world.setBlockState(pos, state);
         world.playSoundAtBlockCenter(pos, SoundEvents.BLOCK_AMETHYST_BLOCK_RESONATE, SoundCategory.BLOCKS, 1f, 1.5f, true);
+        return state;
+    }
+
+    @Override
+    protected void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
+        if (oldState.getBlock() != state.getBlock() && world instanceof ServerWorld serverWorld) {
+            this.update(state, serverWorld, pos);
+        }
     }
 
     @Override
@@ -70,15 +78,13 @@ public class FairyLightBlock extends Block {
 
     public void update(BlockState state, ServerWorld world, BlockPos pos) {
         boolean bl = world.isReceivingRedstonePower(pos);
-        BlockState blockState = state;
-        if (bl != state.get(POWERED)) {
+        if (bl != (Boolean)state.get(POWERED)) {
+            BlockState blockState = state;
             if (!(Boolean)state.get(POWERED)) {
-                state = blockState.with(POWERED, bl);
-                cycleColors(state, world, pos);
+                blockState = cycleColors(state, world, pos);
             }
-        } else {
-            state = blockState.with(POWERED, bl);
-            world.setBlockState(pos, state);
+
+            world.setBlockState(pos, blockState.with(POWERED, Boolean.valueOf(bl)), Block.NOTIFY_ALL);
         }
     }
 
