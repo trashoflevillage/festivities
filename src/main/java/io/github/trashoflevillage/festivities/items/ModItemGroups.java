@@ -52,6 +52,9 @@ public class ModItemGroups {
                 ModBlocks.GIFTBOX
         );
         addItemsToItemGroup(ItemGroups.BUILDING_BLOCKS,
+                ModBlocks.FAIRY_LIGHT_BLOCK
+        );
+        addItemsToItemGroup(ItemGroups.COLORED_BLOCKS,
                 ModBlocks.WHITE_CANDY_CANE_BLOCK,
                 ModBlocks.LIGHT_GRAY_CANDY_CANE_BLOCK,
                 ModBlocks.GRAY_CANDY_CANE_BLOCK,
