@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "concrete_powder",
+  "ingredients": [
+    {
+      "tag": "festivities:candy_cane_blocks"
+    },
+    {
+      "tag": "festivities:candy_cane_blocks"
+    },
+    {
+      "tag": "festivities:candy_cane_blocks"
+    },
+    {
+      "tag": "festivities:candy_cane_blocks"
+    },
+    {
+      "tag": "festivities:candy_cane_blocks"
+    },
+    {
+      "tag": "festivities:candy_cane_blocks"
+    },
+    {
+      "tag": "festivities:candy_cane_blocks"
+    },
+    {
+      "tag": "festivities:candy_cane_blocks"
+    },
+    {
+      "item": "minecraft:magenta_dye"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "id": "festivities:magenta_candy_cane_block"
+  }
+}

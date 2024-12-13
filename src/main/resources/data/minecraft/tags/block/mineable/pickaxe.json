@@ -1,7 +1,6 @@
 {
   "values": [
-    "festivities:red_candy_cane_block",
-    "festivities:green_candy_cane_block"
+    "#festivities:candy_cane_blocks"
   ],
   "replace": false
 }

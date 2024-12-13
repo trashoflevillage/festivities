@@ -4,7 +4,9 @@ package io.github.trashoflevillage.festivities.villager;
 import io.github.trashoflevillage.festivities.blocks.ModBlocks;
 import io.github.trashoflevillage.festivities.items.ModItems;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
@@ -50,18 +52,37 @@ public class ModTrades {
                     5, 5, LOW_PRICE_MULTIPLER
             ));
         });
-
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GIFTMAKER, 2, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 3),
-                    new ItemStack(ModBlocks.GREEN_CANDY_CANE_BLOCK, 16),
-                    12, 10, LOW_PRICE_MULTIPLER
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 3),
-                    new ItemStack(ModBlocks.RED_CANDY_CANE_BLOCK, 16),
-                    12, 10, LOW_PRICE_MULTIPLER
-            ));
+            int candyCaneTradeMaxUses = 12;
+            int candyCaneTradeMechantExperience = 10;
+            int candyCaneTradeCount = 16;
+            int candyCaneTradePrice = 3;
+            ItemConvertible[] candyCaneTypes = new ItemConvertible[] {
+                    ModBlocks.WHITE_CANDY_CANE_BLOCK,
+                    ModBlocks.LIGHT_GRAY_CANDY_CANE_BLOCK,
+                    ModBlocks.GRAY_CANDY_CANE_BLOCK,
+                    ModBlocks.BLACK_CANDY_CANE_BLOCK,
+                    ModBlocks.BROWN_CANDY_CANE_BLOCK,
+                    ModBlocks.RED_CANDY_CANE_BLOCK,
+                    ModBlocks.ORANGE_CANDY_CANE_BLOCK,
+                    ModBlocks.YELLOW_CANDY_CANE_BLOCK,
+                    ModBlocks.LIME_CANDY_CANE_BLOCK,
+                    ModBlocks.GREEN_CANDY_CANE_BLOCK,
+                    ModBlocks.CYAN_CANDY_CANE_BLOCK,
+                    ModBlocks.LIGHT_BLUE_CANDY_CANE_BLOCK,
+                    ModBlocks.BLUE_CANDY_CANE_BLOCK,
+                    ModBlocks.PURPLE_CANDY_CANE_BLOCK,
+                    ModBlocks.MAGENTA_CANDY_CANE_BLOCK,
+                    ModBlocks.PINK_CANDY_CANE_BLOCK
+            };
+
+            for (ItemConvertible i : candyCaneTypes) {
+                factories.add((entity, random) -> new TradeOffer(
+                        new TradedItem(Items.EMERALD, candyCaneTradePrice),
+                        new ItemStack(i, candyCaneTradeCount),
+                        candyCaneTradeMaxUses, candyCaneTradeMechantExperience, LOW_PRICE_MULTIPLER
+                ));
+            }
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GIFTMAKER, 3, factories -> {

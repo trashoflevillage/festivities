@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "festivities:block/brown_candy_cane_block"
+  }
+}

@@ -1,6 +1,8 @@
 package io.github.trashoflevillage.festivities.datagen;
 
+import io.github.trashoflevillage.festivities.blocks.ModBlocks;
 import io.github.trashoflevillage.festivities.util.ModConventionalTags;
+import io.github.trashoflevillage.festivities.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Blocks;
@@ -51,5 +53,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.MANGROVE_WOOD)
                 .add(Blocks.CRIMSON_HYPHAE)
                 .add(Blocks.WARPED_HYPHAE);
+
+
+        getOrCreateTagBuilder(ModTags.Blocks.CANDY_CANE_BLOCKS)
+                .add(ModBlocks.WHITE_CANDY_CANE_BLOCK)
+                .add(ModBlocks.LIGHT_GRAY_CANDY_CANE_BLOCK)
+                .add(ModBlocks.GRAY_CANDY_CANE_BLOCK)
+                .add(ModBlocks.BLACK_CANDY_CANE_BLOCK)
+                .add(ModBlocks.BROWN_CANDY_CANE_BLOCK)
+                .add(ModBlocks.RED_CANDY_CANE_BLOCK)
+                .add(ModBlocks.ORANGE_CANDY_CANE_BLOCK)
+                .add(ModBlocks.YELLOW_CANDY_CANE_BLOCK)
+                .add(ModBlocks.LIME_CANDY_CANE_BLOCK)
+                .add(ModBlocks.GREEN_CANDY_CANE_BLOCK)
+                .add(ModBlocks.CYAN_CANDY_CANE_BLOCK)
+                .add(ModBlocks.LIGHT_BLUE_CANDY_CANE_BLOCK)
+                .add(ModBlocks.BLUE_CANDY_CANE_BLOCK)
+                .add(ModBlocks.PURPLE_CANDY_CANE_BLOCK)
+                .add(ModBlocks.MAGENTA_CANDY_CANE_BLOCK)
+                .add(ModBlocks.PINK_CANDY_CANE_BLOCK);
     }
 }

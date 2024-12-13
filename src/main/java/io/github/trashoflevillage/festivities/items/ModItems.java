@@ -15,8 +15,6 @@ public class ModItems {
     public static final Item JOLLY_HELMET =
             registerItem("jolly_helmet", new ArmorItem(ModArmorMaterials.JOLLY, ArmorItem.Type.HELMET,
                     new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(ModArmorMaterials.JOLLY_DURABILITY_MULTIPLIER))));
-    public static final Item HOLIDAY_BUNDLE =
-            registerItem("holiday_bundle", new BundleItem(new Item.Settings().maxCount(1)));
 
     public static void registerModItems() {
         Festivities.LOGGER.info("Registering items for " + Festivities.MOD_ID + ".");

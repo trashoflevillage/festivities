@@ -23,8 +23,23 @@ import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 import java.util.function.ToIntFunction;
 
 public class ModBlocks {
+    public static Block BLACK_CANDY_CANE_BLOCK = registerBlock("black_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block BLUE_CANDY_CANE_BLOCK = registerBlock("blue_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block BROWN_CANDY_CANE_BLOCK = registerBlock("brown_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block CYAN_CANDY_CANE_BLOCK = registerBlock("cyan_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block GRAY_CANDY_CANE_BLOCK = registerBlock("gray_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block LIGHT_BLUE_CANDY_CANE_BLOCK = registerBlock("light_blue_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block LIGHT_GRAY_CANDY_CANE_BLOCK = registerBlock("light_gray_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block LIME_CANDY_CANE_BLOCK = registerBlock("lime_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block MAGENTA_CANDY_CANE_BLOCK = registerBlock("magenta_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block ORANGE_CANDY_CANE_BLOCK = registerBlock("orange_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block PINK_CANDY_CANE_BLOCK = registerBlock("pink_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block PURPLE_CANDY_CANE_BLOCK = registerBlock("purple_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block WHITE_CANDY_CANE_BLOCK = registerBlock("white_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static Block YELLOW_CANDY_CANE_BLOCK = registerBlock("yellow_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
     public static Block RED_CANDY_CANE_BLOCK = registerBlock("red_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
     public static Block GREEN_CANDY_CANE_BLOCK = registerBlock("green_candy_cane_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+
     public static Block GIFTBOX = registerBlock("giftbox", new Block(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL)));
     public static Block FAIRY_LIGHT_BLOCK = registerBlock("fairy_light_block", new FairyLightBlock(AbstractBlock.Settings.copy(Blocks.GLASS).luminance(
             state -> 15

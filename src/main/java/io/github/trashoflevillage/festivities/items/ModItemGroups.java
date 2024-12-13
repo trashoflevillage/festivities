@@ -22,11 +22,24 @@ public class ModItemGroups {
                     .icon(() -> DyedColorComponent.setColor(CREATIVE_TAB_ICON, List.of((DyeItem)Items.RED_DYE)))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.JOLLY_HELMET);
+                        entries.add(ModBlocks.WHITE_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.LIGHT_GRAY_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.GRAY_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.BLACK_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.BROWN_CANDY_CANE_BLOCK);
                         entries.add(ModBlocks.RED_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.ORANGE_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.YELLOW_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.LIME_CANDY_CANE_BLOCK);
                         entries.add(ModBlocks.GREEN_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.CYAN_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.LIGHT_BLUE_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.BLUE_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.PURPLE_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.MAGENTA_CANDY_CANE_BLOCK);
+                        entries.add(ModBlocks.PINK_CANDY_CANE_BLOCK);
                         entries.add(ModBlocks.GIFTBOX);
                         entries.add(ModBlocks.FAIRY_LIGHT_BLOCK);
-                        entries.add(ModItems.HOLIDAY_BUNDLE);
                     }))
                     .build()
     );
@@ -39,8 +52,22 @@ public class ModItemGroups {
                 ModBlocks.GIFTBOX
         );
         addItemsToItemGroup(ItemGroups.BUILDING_BLOCKS,
+                ModBlocks.WHITE_CANDY_CANE_BLOCK,
+                ModBlocks.LIGHT_GRAY_CANDY_CANE_BLOCK,
+                ModBlocks.GRAY_CANDY_CANE_BLOCK,
+                ModBlocks.BLACK_CANDY_CANE_BLOCK,
+                ModBlocks.BROWN_CANDY_CANE_BLOCK,
                 ModBlocks.RED_CANDY_CANE_BLOCK,
+                ModBlocks.ORANGE_CANDY_CANE_BLOCK,
+                ModBlocks.YELLOW_CANDY_CANE_BLOCK,
+                ModBlocks.LIME_CANDY_CANE_BLOCK,
                 ModBlocks.GREEN_CANDY_CANE_BLOCK,
+                ModBlocks.CYAN_CANDY_CANE_BLOCK,
+                ModBlocks.LIGHT_BLUE_CANDY_CANE_BLOCK,
+                ModBlocks.BLUE_CANDY_CANE_BLOCK,
+                ModBlocks.PURPLE_CANDY_CANE_BLOCK,
+                ModBlocks.MAGENTA_CANDY_CANE_BLOCK,
+                ModBlocks.PINK_CANDY_CANE_BLOCK,
                 ModBlocks.FAIRY_LIGHT_BLOCK
         );
         addItemsToItemGroup(ItemGroups.REDSTONE,
