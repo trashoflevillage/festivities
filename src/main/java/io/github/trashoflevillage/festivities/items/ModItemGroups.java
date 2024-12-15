@@ -41,6 +41,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GIFTBOX);
                         entries.add(ModBlocks.FAIRY_LIGHT_BLOCK);
                         entries.add(ModItems.SUGAR_COOKIE);
+                        entries.add(ModItems.FRUITCAKE);
                     }))
                     .build()
     );
@@ -78,7 +79,8 @@ public class ModItemGroups {
                 ModBlocks.FAIRY_LIGHT_BLOCK
         );
         addItemsToItemGroup(ItemGroups.FOOD_AND_DRINK,
-                ModItems.SUGAR_COOKIE
+                ModItems.SUGAR_COOKIE,
+                ModItems.FRUITCAKE
         );
     }
 

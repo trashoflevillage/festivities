@@ -10,11 +10,11 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:pumpkin_pie"
+          "name": "festivities:fruitcake"
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:cookie"
+          "name": "festivities:sugar_cookie"
         },
         {
           "type": "minecraft:item",

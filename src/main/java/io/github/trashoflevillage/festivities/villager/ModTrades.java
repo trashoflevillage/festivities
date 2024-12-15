@@ -104,6 +104,11 @@ public class ModTrades {
                     new ItemStack(ModItems.SUGAR_COOKIE, 18),
                     12, 15, LOW_PRICE_MULTIPLER
             ));
+            factories.add((entity, random) -> new TradeOffer(
+                    new TradedItem(Items.EMERALD, 1),
+                    new ItemStack(ModItems.FRUITCAKE, 4),
+                    12, 15, LOW_PRICE_MULTIPLER
+            ));
         });
     }
 }

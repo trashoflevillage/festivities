@@ -24,6 +24,11 @@ public class ModItems {
                     .component(DataComponentTypes.FOOD,
                             new FoodComponent.Builder().nutrition(4).saturationModifier(0.1F).snack().build())));
 
+    public static final Item FRUITCAKE =
+            registerItem("fruitcake", new Item(new Item.Settings()
+                    .component(DataComponentTypes.FOOD,
+                            new FoodComponent.Builder().nutrition(8).saturationModifier(0.3F).build())));
+
     public static void registerModItems() {
         Festivities.LOGGER.info("Registering items for " + Festivities.MOD_ID + ".");
     }
