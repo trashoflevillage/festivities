@@ -32,7 +32,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 ModBlocks.PURPLE_CANDY_CANE_BLOCK,
                 ModBlocks.MAGENTA_CANDY_CANE_BLOCK,
                 ModBlocks.PINK_CANDY_CANE_BLOCK,
-                ModBlocks.MAGIC_GLOBE
+                ModBlocks.MAGIC_SNOWGLOBE
         };
         for (Block i : blocksThatDropThemselves) addDrop(i);
     }

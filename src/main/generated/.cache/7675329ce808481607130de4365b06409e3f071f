@@ -1,9 +1,9 @@
-// 1.21.1	2024-12-15T11:25:26.3512544	Festivities/Block Loot Tables
-5a9ec5ef2716b03471bb9f40cfe1a22b59f24acb data\festivities\loot_table\blocks\magic_globe.json
+// 1.21.1	2024-12-15T14:26:15.6961556	Festivities/Block Loot Tables
 38a31f0bdae16af7ed9d39ec94eed11cbaf05874 data\festivities\loot_table\blocks\red_candy_cane_block.json
 571eea6f2433ef3754f6947bda28e978f01ec4a9 data\festivities\loot_table\blocks\black_candy_cane_block.json
 9a4070334c581437cb83d17aa8a3b14c3157c714 data\festivities\loot_table\blocks\green_candy_cane_block.json
 0f701180b831516ca592d54921743f8699c047d6 data\festivities\loot_table\blocks\orange_candy_cane_block.json
+7a09ebb512ec90031c6e9a7dd44cadee2a829b54 data\festivities\loot_table\blocks\magic_snowglobe.json
 8fff13863a6b568fbf2591cdf3fdc1b87c0bb2eb data\festivities\loot_table\blocks\pink_candy_cane_block.json
 e3d92d87a3692068fc47469f67b5747c3add0406 data\festivities\loot_table\blocks\brown_candy_cane_block.json
 d07f2401de5a6de7d5079730c724847238e60500 data\festivities\loot_table\blocks\gray_candy_cane_block.json

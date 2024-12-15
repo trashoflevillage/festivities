@@ -42,7 +42,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FAIRY_LIGHT_BLOCK);
                         entries.add(ModItems.SUGAR_COOKIE);
                         entries.add(ModItems.FRUITCAKE);
-                        entries.add(ModBlocks.MAGIC_GLOBE);
+                        entries.add(ModBlocks.MAGIC_SNOWGLOBE);
                         entries.add(ModItems.EGGNOG);
                     }))
                     .build()
@@ -54,7 +54,7 @@ public class ModItemGroups {
         );
         addItemsToItemGroup(ItemGroups.FUNCTIONAL,
                 ModBlocks.GIFTBOX,
-                ModBlocks.MAGIC_GLOBE
+                ModBlocks.MAGIC_SNOWGLOBE
         );
         addItemsToItemGroup(ItemGroups.BUILDING_BLOCKS,
                 ModBlocks.FAIRY_LIGHT_BLOCK

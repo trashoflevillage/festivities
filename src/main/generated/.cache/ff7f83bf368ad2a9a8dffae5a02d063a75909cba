@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-15T11:25:26.3692559	Festivities/Recipes
+// 1.21.1	2024-12-15T14:26:15.7071554	Festivities/Recipes
 f5d87cd1b540fa7b9cc229c612c1faaffaa349c9 data\festivities\advancement\recipes\building_blocks\green_candy_cane_block.json
 7a2e59fe02a4092c93399dd5703f1f6de47a1545 data\festivities\recipe\light_gray_candy_cane_block.json
 f13fbfe4b8f3b964f55c8a73bb69e1ad263a8150 data\festivities\advancement\recipes\building_blocks\black_candy_cane_block.json
@@ -15,8 +15,8 @@ ce1383c006d9e8a1439c6aba58837f77d15f61fe data\festivities\advancement\recipes\bu
 36d3b89944586c4cefd2eb67e6069d690686f303 data\festivities\recipe\magenta_candy_cane_block.json
 273fb4a075697146e8b45e4f875dc1df00b795d1 data\festivities\recipe\gray_candy_cane_block.json
 45d441b1027b74c59240568711d1a0d531e452f1 data\festivities\recipe\black_candy_cane_block.json
-7d175f990d26332c803bd11e8661db7784ed3eea data\festivities\recipe\cyan_candy_cane_block.json
 bfeb6a59e9aa41da8a11426312b92e8283114173 data\festivities\recipe\purple_candy_cane_block.json
+7d175f990d26332c803bd11e8661db7784ed3eea data\festivities\recipe\cyan_candy_cane_block.json
 30dc753ac4ba73e3cf939cc5fe93b69ff099a161 data\festivities\advancement\recipes\building_blocks\light_blue_candy_cane_block.json
 2596b78a1dcf129bf63c8c33a3ade89d2795d91b data\festivities\recipe\lime_candy_cane_block.json
 9d488668e5ddc37acf9de46a3f0d75460992eb53 data\festivities\recipe\green_candy_cane_block.json

@@ -4,17 +4,11 @@ package io.github.trashoflevillage.festivities.villager;
 import io.github.trashoflevillage.festivities.blocks.ModBlocks;
 import io.github.trashoflevillage.festivities.items.ModItems;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.server.world.ServerWorld;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradedItem;
-import net.minecraft.village.VillagerProfession;
-
-import java.util.Optional;
 
 public class ModTrades {
     private static final float LOW_PRICE_MULTIPLER = 0.05F;
@@ -119,7 +113,7 @@ public class ModTrades {
             ));
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 64),
-                    new ItemStack(ModBlocks.MAGIC_GLOBE, 1),
+                    new ItemStack(ModBlocks.MAGIC_SNOWGLOBE, 1),
                     12, 15, HIGH_PRICE_MULTIPLER
             ));
         });

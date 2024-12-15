@@ -15,7 +15,7 @@ import net.minecraft.item.Item;
 @Environment(EnvType.CLIENT)
 public class FestivitiesClient implements ClientModInitializer {
     private static final Block[] blocksWithTransparency = new Block[] {
-            ModBlocks.MAGIC_GLOBE
+            ModBlocks.MAGIC_SNOWGLOBE
     };
 
     @Override

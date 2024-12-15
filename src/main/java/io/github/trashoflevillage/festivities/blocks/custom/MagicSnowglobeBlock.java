@@ -1,23 +1,27 @@
 package io.github.trashoflevillage.festivities.blocks.custom;
 
-import com.mojang.serialization.MapCodec;
+import io.github.trashoflevillage.festivities.Festivities;
 import net.minecraft.block.*;
 import net.minecraft.entity.ai.pathing.NavigationType;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
-public class MagicGlobeBlock extends Block implements Waterloggable  {
+public class MagicSnowglobeBlock extends Block implements Waterloggable  {
     private static final VoxelShape OUTLINE_SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
 
-    public MagicGlobeBlock(AbstractBlock.Settings settings) {
+    public MagicSnowglobeBlock(AbstractBlock.Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(Properties.WATERLOGGED, Boolean.valueOf(false)));
     }
@@ -57,5 +61,11 @@ public class MagicGlobeBlock extends Block implements Waterloggable  {
     @Override
     protected boolean canPathfindThrough(BlockState state, NavigationType type) {
         return false;
+    }
+
+    @Override
+    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+        Festivities.enableChristmas(world, player);
+        return ActionResult.SUCCESS;
     }
 }

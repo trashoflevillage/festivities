@@ -2,24 +2,18 @@ package io.github.trashoflevillage.festivities.blocks;
 
 import io.github.trashoflevillage.festivities.Festivities;
 import io.github.trashoflevillage.festivities.blocks.custom.FairyLightBlock;
-import io.github.trashoflevillage.festivities.blocks.custom.MagicGlobeBlock;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import io.github.trashoflevillage.festivities.blocks.custom.MagicSnowglobeBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.data.family.BlockFamilies;
-import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.HoneycombItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 
 import java.util.function.ToIntFunction;
 
@@ -45,7 +39,7 @@ public class ModBlocks {
     public static Block FAIRY_LIGHT_BLOCK = registerBlock("fairy_light_block", new FairyLightBlock(AbstractBlock.Settings.copy(Blocks.GLASS).luminance(
             state -> 15
     )));
-    public static Block MAGIC_GLOBE = registerBlock("magic_globe", new MagicGlobeBlock(AbstractBlock.Settings.copy(Blocks.GLASS)));
+    public static Block MAGIC_SNOWGLOBE = registerBlock("magic_snowglobe", new MagicSnowglobeBlock(AbstractBlock.Settings.copy(Blocks.GLASS)));
 
     private static Block registerBlock(String name, Block block) {
         return registerBlock(name, block, true);

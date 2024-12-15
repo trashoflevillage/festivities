@@ -23,12 +23,12 @@
   },
   "texture_size": [16, 16],
   "textures": {
-    "all": "festivities:block/magic_globe",
-    "particle": "festivities:block/magic_globe"
+    "all": "festivities:block/magic_snowglobe",
+    "particle": "festivities:block/magic_snowglobe"
   },
   "elements": [
     {
-      "name": "magic_globe",
+      "name": "magic_snowglobe",
       "from": [4, 0, 4],
       "to": [12, 8, 12],
       "faces": {
