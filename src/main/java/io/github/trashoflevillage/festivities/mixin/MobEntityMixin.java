@@ -57,6 +57,13 @@ public abstract class MobEntityMixin extends Entity implements MobFestiveSkinAcc
         }
     }
 
+    @Inject(method = "tick", at = @At("HEAD"))
+    protected void tick(CallbackInfo ci) {
+        if (getFestiveSkin() == -1) {
+            setFestiveSkin(getInitFestiveSkin());
+        }
+    }
+
     private int getInitFestiveSkin() {
         if (random.nextFloat() < 0.5f) {
             if (Festivities.isChristmas()) return 1;

@@ -29,27 +29,27 @@ public class ModTrades {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
                     new ItemStack(Items.SNOWBALL, 8),
-                    5, 5, LOW_PRICE_MULTIPLER
+                    5, 2, LOW_PRICE_MULTIPLER
             ));
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
                     new ItemStack(Items.SNOW_BLOCK, 2),
-                    5, 5, LOW_PRICE_MULTIPLER
+                    5, 2, LOW_PRICE_MULTIPLER
             ));
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
                     new ItemStack(Items.CARVED_PUMPKIN, 1),
-                    5, 5, LOW_PRICE_MULTIPLER
+                    5, 2, LOW_PRICE_MULTIPLER
             ));
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
-                    new ItemStack(Items.COOKIE, 4),
-                    5, 5, LOW_PRICE_MULTIPLER
+                    new ItemStack(Items.COOKIE, 3),
+                    5, 2, LOW_PRICE_MULTIPLER
             ));
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
                     new ItemStack(Items.MILK_BUCKET, 1),
-                    5, 5, LOW_PRICE_MULTIPLER
+                    5, 2, LOW_PRICE_MULTIPLER
             ));
         });
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GIFTMAKER, 2, factories -> {
@@ -89,12 +89,20 @@ public class ModTrades {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 15),
                     ModItems.getRandomlyColoredJollyHat(random),
-                    5, 25, HIGH_PRICE_MULTIPLER
+                    5, 20, HIGH_PRICE_MULTIPLER
             ));
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 3),
                     new ItemStack(ModBlocks.FAIRY_LIGHT_BLOCK, 2),
-                    5, 25, LOW_PRICE_MULTIPLER
+                    5, 20, LOW_PRICE_MULTIPLER
+            ));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GIFTMAKER, 4, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new TradedItem(Items.EMERALD, 3),
+                    new ItemStack(ModItems.SUGAR_COOKIE, 18),
+                    12, 15, LOW_PRICE_MULTIPLER
             ));
         });
     }
