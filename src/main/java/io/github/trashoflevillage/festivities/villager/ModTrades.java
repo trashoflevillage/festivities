@@ -110,6 +110,19 @@ public class ModTrades {
                     12, 15, LOW_PRICE_MULTIPLER
             ));
         });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GIFTMAKER, 5, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new TradedItem(Items.EMERALD, 3),
+                    new ItemStack(ModItems.EGGNOG, 8),
+                    12, 15, LOW_PRICE_MULTIPLER
+            ));
+            factories.add((entity, random) -> new TradeOffer(
+                    new TradedItem(Items.EMERALD, 64),
+                    new ItemStack(ModBlocks.MAGIC_GLOBE, 1),
+                    12, 15, HIGH_PRICE_MULTIPLER
+            ));
+        });
     }
 }
 

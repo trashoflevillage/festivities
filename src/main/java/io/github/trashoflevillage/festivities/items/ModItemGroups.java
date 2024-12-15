@@ -42,6 +42,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FAIRY_LIGHT_BLOCK);
                         entries.add(ModItems.SUGAR_COOKIE);
                         entries.add(ModItems.FRUITCAKE);
+                        entries.add(ModBlocks.MAGIC_GLOBE);
+                        entries.add(ModItems.EGGNOG);
                     }))
                     .build()
     );
@@ -51,7 +53,8 @@ public class ModItemGroups {
                 ModItems.JOLLY_HELMET
         );
         addItemsToItemGroup(ItemGroups.FUNCTIONAL,
-                ModBlocks.GIFTBOX
+                ModBlocks.GIFTBOX,
+                ModBlocks.MAGIC_GLOBE
         );
         addItemsToItemGroup(ItemGroups.BUILDING_BLOCKS,
                 ModBlocks.FAIRY_LIGHT_BLOCK
@@ -80,7 +83,8 @@ public class ModItemGroups {
         );
         addItemsToItemGroup(ItemGroups.FOOD_AND_DRINK,
                 ModItems.SUGAR_COOKIE,
-                ModItems.FRUITCAKE
+                ModItems.FRUITCAKE,
+                ModItems.EGGNOG
         );
     }
 

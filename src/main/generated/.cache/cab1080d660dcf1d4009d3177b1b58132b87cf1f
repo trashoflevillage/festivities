@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-13T10:42:00.6069878	Festivities/Model Definitions
+// 1.21.1	2024-12-15T11:25:26.3572578	Festivities/Model Definitions
 3894e97ec036ed7975abc8e73ec6934918c22c90 assets\festivities\models\block\cyan_candy_cane_block.json
 a2fa56aac6c095f39ed30f4635c0e8628f71c6eb assets\festivities\models\item\brown_candy_cane_block.json
 2c2df5db5dda5f4def755b0031d58317703f2aae assets\festivities\models\item\black_candy_cane_block.json
@@ -22,8 +22,8 @@ ce3110b6661c64844ef5b2cfe83e865119467e9a assets\festivities\models\item\blue_can
 0b28ab397373728ca07ff3055619ef50e120a4cc assets\festivities\models\block\blue_candy_cane_block.json
 e3d161600fd7668755834557ca25a92ecff2e440 assets\festivities\models\item\gray_candy_cane_block.json
 cfc16f1700ce2a36bfe77a2eb2ac51582158ccd2 assets\festivities\blockstates\cyan_candy_cane_block.json
-adae2a9d710f922c4ae7828fc520be1bf0c03c21 assets\festivities\blockstates\white_candy_cane_block.json
 752b8764966e94ffe6f33b0954ea3aff8f1ea5c4 assets\festivities\blockstates\lime_candy_cane_block.json
+adae2a9d710f922c4ae7828fc520be1bf0c03c21 assets\festivities\blockstates\white_candy_cane_block.json
 509aaa95aebc0538709cae185c02d4c8c92238ba assets\festivities\models\block\purple_candy_cane_block.json
 f290c16d9dd3ff7345e5a3e6ca210867232988d7 assets\festivities\blockstates\blue_candy_cane_block.json
 99dac7fd493ef718df86f88eea8375eb37658b32 assets\festivities\models\block\white_candy_cane_block.json

@@ -6,31 +6,28 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:bread"
+          "name": "festivities:eggnog",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "festivities:fruitcake"
+          "name": "festivities:fruitcake",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "festivities:sugar_cookie"
+          "name": "festivities:sugar_cookie",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:emerald"
+          "name": "minecraft:emerald",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:milk_bucket"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:cake"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "festivities:giftbox"
+          "name": "festivities:giftbox",
+          "weight": 1
         }
       ],
       "rolls": 1

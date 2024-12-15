@@ -2,6 +2,7 @@ package io.github.trashoflevillage.festivities.blocks;
 
 import io.github.trashoflevillage.festivities.Festivities;
 import io.github.trashoflevillage.festivities.blocks.custom.FairyLightBlock;
+import io.github.trashoflevillage.festivities.blocks.custom.MagicGlobeBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -44,6 +45,7 @@ public class ModBlocks {
     public static Block FAIRY_LIGHT_BLOCK = registerBlock("fairy_light_block", new FairyLightBlock(AbstractBlock.Settings.copy(Blocks.GLASS).luminance(
             state -> 15
     )));
+    public static Block MAGIC_GLOBE = registerBlock("magic_globe", new MagicGlobeBlock(AbstractBlock.Settings.copy(Blocks.GLASS)));
 
     private static Block registerBlock(String name, Block block) {
         return registerBlock(name, block, true);

@@ -1,6 +1,7 @@
 package io.github.trashoflevillage.festivities.items;
 
 import io.github.trashoflevillage.festivities.Festivities;
+import io.github.trashoflevillage.festivities.items.custom.EggnogItem;
 import net.minecraft.component.ComponentType;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.DyedColorComponent;
@@ -28,6 +29,9 @@ public class ModItems {
             registerItem("fruitcake", new Item(new Item.Settings()
                     .component(DataComponentTypes.FOOD,
                             new FoodComponent.Builder().nutrition(8).saturationModifier(0.3F).build())));
+
+    public static final Item EGGNOG =
+            registerItem("eggnog", new EggnogItem(new Item.Settings().recipeRemainder(Items.GLASS_BOTTLE).maxCount(16)));
 
     public static void registerModItems() {
         Festivities.LOGGER.info("Registering items for " + Festivities.MOD_ID + ".");

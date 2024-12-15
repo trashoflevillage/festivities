@@ -23,5 +23,12 @@
   "entity.minecraft.villager.giftmaker": "Giftmaker",
 
   "item.festivities.sugar_cookie": "Sugar Cookie",
-  "item.festivities.fruitcake": "Fruitcake"
+  "item.festivities.fruitcake": "Fruitcake",
+
+  "block.festivities.magic_globe": "Magic Globe",
+
+  "advancements.adventure.magic_globe.title": "Breaking Tradition",
+  "advancements.adventure.magic_globe.description": "Obtain a Magic Globe",
+
+  "item.festivities.eggnog": "Eggnog"
 }

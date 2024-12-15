@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:adventure/trade",
+  "criteria": {
+    "magic_globe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "festivities:magic_globe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.adventure.magic_globe.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "festivities:magic_globe"
+    },
+    "title": {
+      "translate": "advancements.adventure.magic_globe.title"
+    }
+  },
+  "requirements": [
+    [
+      "magic_globe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
