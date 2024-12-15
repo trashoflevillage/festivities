@@ -18,6 +18,9 @@ public class GlobalEntity {
     public static void initHolidayEquipment(HostileEntity entity) {
         ItemStack helmet = entity.getEquippedStack(EquipmentSlot.HEAD);
         Random random = entity.getRandom();
+
+        // BUG:
+        // IF CHRISTMAS IS ENABLED ON HALLOWEEN DAY, MOBS CAN STILL SPAWN WITH PUMPKINS/JACKOLANTERNS ON THEIR HEADS.
         if (helmet.isOf(Items.PUMPKIN) || helmet.isOf(Items.JACK_O_LANTERN))
             entity.equipStack(EquipmentSlot.HEAD, new ItemStack(Items.AIR));
 

@@ -72,7 +72,7 @@ public class Festivities implements ModInitializer {
 	public static boolean isHalloween(World world) {
 		WorldMixinAccess worldAccess = (WorldMixinAccess)world;
 		if (worldAccess.getHolidayOverride() != Holiday.NONE) {
-			return worldAccess.getHolidayOverride() == Holiday.CHRISTMAS;
+			return worldAccess.getHolidayOverride() == Holiday.HALLOWEEN;
 		} else {
 			return isHalloween();
 		}
