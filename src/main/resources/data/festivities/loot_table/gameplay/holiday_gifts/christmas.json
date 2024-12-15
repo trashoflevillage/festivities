@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin_pie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cookie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:milk_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cake"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "festivities:giftbox"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "festivities:gameplay/holiday_gifts/christmas"
+}

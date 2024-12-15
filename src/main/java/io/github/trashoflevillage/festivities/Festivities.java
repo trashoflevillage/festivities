@@ -1,5 +1,6 @@
 package io.github.trashoflevillage.festivities;
 
+import com.google.common.collect.ImmutableList;
 import io.github.trashoflevillage.festivities.blocks.ModBlocks;
 import io.github.trashoflevillage.festivities.items.ModArmorMaterials;
 import io.github.trashoflevillage.festivities.items.ModItemGroups;
