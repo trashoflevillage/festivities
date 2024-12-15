@@ -12,10 +12,13 @@
     "defaultRequire": 1
   },
   "client": [
+    "ChickenEntityRendererMixin",
+    "CowEntityRendererMixin",
     "CreeperEntityRendererMixin",
     "EvokerEntityRendererMixin",
     "HuskEntityRendererMixin",
     "MinecraftClientMixin",
+    "PigEntityRendererMixin",
     "PillagerEntityRendererMixin",
     "RavagerEntityRendererMixin",
     "SkeletonEntityRendererMixin",

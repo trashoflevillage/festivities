@@ -20,5 +20,7 @@
   "block.festivities.giftbox": "Giftbox",
   "block.festivities.fairy_light_block": "Fairy Light Block",
 
-  "entity.minecraft.villager.giftmaker": "Giftmaker"
+  "entity.minecraft.villager.giftmaker": "Giftmaker",
+
+  "item.festivities.sugar_cookie": "Sugar Cookie"
 }

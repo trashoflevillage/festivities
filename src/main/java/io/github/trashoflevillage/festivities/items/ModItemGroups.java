@@ -40,6 +40,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_CANDY_CANE_BLOCK);
                         entries.add(ModBlocks.GIFTBOX);
                         entries.add(ModBlocks.FAIRY_LIGHT_BLOCK);
+                        entries.add(ModItems.SUGAR_COOKIE);
                     }))
                     .build()
     );
@@ -75,6 +76,9 @@ public class ModItemGroups {
         );
         addItemsToItemGroup(ItemGroups.REDSTONE,
                 ModBlocks.FAIRY_LIGHT_BLOCK
+        );
+        addItemsToItemGroup(ItemGroups.FOOD_AND_DRINK,
+                ModItems.SUGAR_COOKIE
         );
     }
 

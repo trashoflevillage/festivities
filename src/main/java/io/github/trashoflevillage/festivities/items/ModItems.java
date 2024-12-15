@@ -1,7 +1,10 @@
 package io.github.trashoflevillage.festivities.items;
 
 import io.github.trashoflevillage.festivities.Festivities;
+import net.minecraft.component.ComponentType;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.DyedColorComponent;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -15,6 +18,11 @@ public class ModItems {
     public static final Item JOLLY_HELMET =
             registerItem("jolly_helmet", new ArmorItem(ModArmorMaterials.JOLLY, ArmorItem.Type.HELMET,
                     new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(ModArmorMaterials.JOLLY_DURABILITY_MULTIPLIER))));
+
+    public static final Item SUGAR_COOKIE =
+            registerItem("sugar_cookie", new Item(new Item.Settings()
+                    .component(DataComponentTypes.FOOD,
+                            new FoodComponent.Builder().nutrition(4).saturationModifier(0.1F).snack().build())));
 
     public static void registerModItems() {
         Festivities.LOGGER.info("Registering items for " + Festivities.MOD_ID + ".");
