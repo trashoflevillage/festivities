@@ -1,6 +1,8 @@
 package io.github.trashoflevillage.festivities.blocks.custom;
 
 import io.github.trashoflevillage.festivities.Festivities;
+import io.github.trashoflevillage.festivities.access.WorldMixinAccess;
+import io.github.trashoflevillage.festivities.mixin.WorldMixin;
 import net.minecraft.block.*;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
@@ -65,7 +67,11 @@ public class MagicSnowglobeBlock extends Block implements Waterloggable  {
 
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        Festivities.enableChristmas(world, player);
+        WorldMixinAccess worldAccess = ((WorldMixinAccess)world);
+        if (worldAccess.getHolidayOverride() != Festivities.Holiday.CHRISTMAS)
+            worldAccess.setHolidayOverride(Festivities.Holiday.CHRISTMAS);
+        else
+            worldAccess.setHolidayOverride(Festivities.Holiday.NONE);
         return ActionResult.SUCCESS;
     }
 }

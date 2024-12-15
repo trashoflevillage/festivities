@@ -22,10 +22,10 @@ public class GlobalEntity {
             entity.equipStack(EquipmentSlot.HEAD, new ItemStack(Items.AIR));
 
         if (helmet.isEmpty() && random.nextFloat() < 0.25F) {
-            if (Festivities.isHalloween()) {
+            if (Festivities.isHalloween(entity.getWorld())) {
                 entity.equipStack(EquipmentSlot.HEAD, new ItemStack(random.nextFloat() < 0.1F ? Blocks.JACK_O_LANTERN : Blocks.CARVED_PUMPKIN));
             }
-            else if (Festivities.isChristmas()) {
+            else if (Festivities.isChristmas(entity.getWorld())) {
                 entity.equipStack(EquipmentSlot.HEAD, ModItems.getRandomlyColoredJollyHat(random, random.nextBetween(1, 5)));
             }
         }

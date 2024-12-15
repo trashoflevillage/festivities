@@ -6,6 +6,7 @@
     "AbstractSkeletonEntityMixin",
     "MobEntityMixin",
     "VillagerTaskListProviderMixin",
+    "WorldMixin",
     "ZombieEntityMixin"
   ],
   "injectors": {

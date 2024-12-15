@@ -129,7 +129,7 @@ public class GiveHolidayGiftsTask extends MultiTickTask<VillagerEntity> {
     }
 
     private boolean isHoliday(PlayerEntity player) {
-        return Festivities.isChristmas();
+        return Festivities.isChristmas(player.getWorld());
     }
 
     private RegistryKey<LootTable> getHolidayLootTable() {

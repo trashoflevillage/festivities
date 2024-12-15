@@ -1,11 +1,11 @@
 package io.github.trashoflevillage.festivities;
 
 import com.google.common.collect.ImmutableList;
+import io.github.trashoflevillage.festivities.access.WorldMixinAccess;
 import io.github.trashoflevillage.festivities.blocks.ModBlocks;
 import io.github.trashoflevillage.festivities.items.ModArmorMaterials;
 import io.github.trashoflevillage.festivities.items.ModItemGroups;
 import io.github.trashoflevillage.festivities.items.ModItems;
-import io.github.trashoflevillage.festivities.server.HolidayOverridePayload;
 import io.github.trashoflevillage.festivities.sounds.ModSounds;
 import io.github.trashoflevillage.festivities.villager.ModTrades;
 import io.github.trashoflevillage.festivities.villager.ModVillagers;
@@ -54,10 +54,28 @@ public class Festivities implements ModInitializer {
 		ModTrades.registerTrades();
 	}
 
+	public static boolean isChristmas(World world) {
+		WorldMixinAccess worldAccess = (WorldMixinAccess)world;
+		if (worldAccess.getHolidayOverride() != Holiday.NONE) {
+			return worldAccess.getHolidayOverride() == Holiday.CHRISTMAS;
+		} else {
+			return isChristmas();
+		}
+	}
+
 	public static boolean isChristmas() {
 		LocalDate localDate = LocalDate.now();
 		int month = localDate.get(ChronoField.MONTH_OF_YEAR);
 		return (month == 12);
+	}
+
+	public static boolean isHalloween(World world) {
+		WorldMixinAccess worldAccess = (WorldMixinAccess)world;
+		if (worldAccess.getHolidayOverride() != Holiday.NONE) {
+			return worldAccess.getHolidayOverride() == Holiday.CHRISTMAS;
+		} else {
+			return isHalloween();
+		}
 	}
 
 	public static boolean isHalloween() {
@@ -66,19 +84,7 @@ public class Festivities implements ModInitializer {
 		return (month == 10);
 	}
 
-	public static void enableChristmas(World world, PlayerEntity player) {
-		if (player instanceof ServerPlayerEntity) {
-			ServerPlayerEntity serverPlayer = (ServerPlayerEntity)player;
-			MinecraftServer server = world.getServer();
-			if (server != null) {
-				server.execute(() -> {
-					ServerPlayNetworking.send(serverPlayer, new HolidayOverridePayload());
-				});
-			}
-		}
-	}
-
 	public enum Holiday {
-		CHRISTMAS
+		NONE, CHRISTMAS, HALLOWEEN
 	}
 }

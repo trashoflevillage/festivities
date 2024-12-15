@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:adventure/trade",
   "criteria": {
-    "magic_globe": {
+    "magic_snowglobe": {
       "conditions": {
         "items": [
           {
-            "items": "festivities:magic_globe"
+            "items": "festivities:magic_snowglobe"
           }
         ]
       },
@@ -14,20 +14,20 @@
   },
   "display": {
     "description": {
-      "translate": "advancements.adventure.magic_globe.description"
+      "translate": "advancements.adventure.magic_snowglobe.description"
     },
     "frame": "goal",
     "icon": {
       "count": 1,
-      "id": "festivities:magic_globe"
+      "id": "festivities:magic_snowglobe"
     },
     "title": {
-      "translate": "advancements.adventure.magic_globe.title"
+      "translate": "advancements.adventure.magic_snowglobe.title"
     }
   },
   "requirements": [
     [
-      "magic_globe"
+      "magic_snowglobe"
     ]
   ],
   "sends_telemetry_event": true

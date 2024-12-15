@@ -66,7 +66,7 @@ public abstract class MobEntityMixin extends Entity implements MobFestiveSkinAcc
 
     private int getInitFestiveSkin() {
         if (random.nextFloat() < 0.5f) {
-            if (Festivities.isChristmas()) return 1;
+            if (Festivities.isChristmas(this.getWorld())) return 1;
         }
         return 0;
     }
