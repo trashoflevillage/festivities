@@ -110,7 +110,6 @@ public class GiveHolidayGiftsTask extends MultiTickTask<VillagerEntity> {
         if (villager.isBaby()) {
             return ImmutableList.of(new ItemStack(Items.POPPY));
         } else {
-            VillagerProfession villagerProfession = villager.getVillagerData().getProfession();
             LootTable lootTable = villager.getWorld().getServer().getReloadableRegistries().getLootTable(getHolidayLootTable());
             LootContextParameterSet lootContextParameterSet = new LootContextParameterSet.Builder((ServerWorld)villager.getWorld())
                     .add(LootContextParameters.ORIGIN, villager.getPos())

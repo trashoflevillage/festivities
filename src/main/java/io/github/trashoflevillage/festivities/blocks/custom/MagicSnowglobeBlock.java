@@ -11,6 +11,7 @@ import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -68,10 +69,11 @@ public class MagicSnowglobeBlock extends Block implements Waterloggable  {
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         WorldMixinAccess worldAccess = ((WorldMixinAccess)world);
-        if (worldAccess.getHolidayOverride() != Festivities.Holiday.CHRISTMAS)
+        if (worldAccess.getHolidayOverride() != Festivities.Holiday.CHRISTMAS) {
             worldAccess.setHolidayOverride(Festivities.Holiday.CHRISTMAS);
-        else
+        } else {
             worldAccess.setHolidayOverride(Festivities.Holiday.NONE);
+        }
         return ActionResult.SUCCESS;
     }
 }
